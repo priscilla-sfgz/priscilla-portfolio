@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --HG: #fff1f9;
+  --text: #2a0017;
+
+  --zeile: 200px;
+  --abstand: 40px;      /* gap */
+  --tempo: 0.5s;        /* Dauer der Animation */
+
+  --schrift: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: var(--text);
+  font-family: var(--schrift);
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.head {
+  margin: 0 auto;
+  padding: 3rem 4rem;
+}
+
+.head h1 {
+    font-size: 4rem;
+    color: #52002d;
+    font-family: "Spicy Rice", serif;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+
+.head p {
+    font-size: 2rem;
+    color: var(--text);
+    font-family: var(--schrift);
+}
+
+main {
+    padding-bottom: 5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 4fr 1fr 1fr 4fr 1fr;
+    gap: 0;
+}
+
+figure {
+    background-color: var(--HG);
+    padding: 1rem 1rem 5rem 1rem;
+}
